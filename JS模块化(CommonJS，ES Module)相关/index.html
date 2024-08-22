@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS模块化(CommonJS，ES Module)相关 | Ideal And Daily</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <script language="javascript" type="text/javascript" src="/js/baidu.js"></script>
+    <meta name="description" content="To record knowledge and daily.">
+    <meta name="ZJF" content="博客优化">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.06abe9db.css" as="style"><link rel="preload" href="/assets/js/app.d3107001.js" as="script"><link rel="preload" href="/assets/js/4.57e241f5.js" as="script"><link rel="preload" href="/assets/js/1.43b398fb.js" as="script"><link rel="preload" href="/assets/js/2.c692a8a1.js" as="script"><link rel="preload" href="/assets/js/23.baec1807.js" as="script"><link rel="preload" href="/assets/js/9.c5aadb64.js" as="script"><link rel="prefetch" href="/assets/js/10.2f34ed02.js"><link rel="prefetch" href="/assets/js/11.a6476a3a.js"><link rel="prefetch" href="/assets/js/12.7c3449a3.js"><link rel="prefetch" href="/assets/js/13.afa25c2f.js"><link rel="prefetch" href="/assets/js/14.7709c075.js"><link rel="prefetch" href="/assets/js/15.2842128e.js"><link rel="prefetch" href="/assets/js/16.0310c2f9.js"><link rel="prefetch" href="/assets/js/17.366de80d.js"><link rel="prefetch" href="/assets/js/18.3e43f75b.js"><link rel="prefetch" href="/assets/js/19.f99d14ca.js"><link rel="prefetch" href="/assets/js/20.0a63f223.js"><link rel="prefetch" href="/assets/js/21.bd05fce9.js"><link rel="prefetch" href="/assets/js/22.3698972e.js"><link rel="prefetch" href="/assets/js/24.0e7258c1.js"><link rel="prefetch" href="/assets/js/25.524a4ed3.js"><link rel="prefetch" href="/assets/js/26.9a7d7733.js"><link rel="prefetch" href="/assets/js/27.21bc50cc.js"><link rel="prefetch" href="/assets/js/28.41843976.js"><link rel="prefetch" href="/assets/js/29.2054692a.js"><link rel="prefetch" href="/assets/js/30.dd73af0b.js"><link rel="prefetch" href="/assets/js/31.252dcc0e.js"><link rel="prefetch" href="/assets/js/32.01d35be1.js"><link rel="prefetch" href="/assets/js/33.999146bb.js"><link rel="prefetch" href="/assets/js/34.67a33088.js"><link rel="prefetch" href="/assets/js/35.69db74bb.js"><link rel="prefetch" href="/assets/js/36.c0a0f3dc.js"><link rel="prefetch" href="/assets/js/37.27457e94.js"><link rel="prefetch" href="/assets/js/38.2ea3c60b.js"><link rel="prefetch" href="/assets/js/39.939f3e84.js"><link rel="prefetch" href="/assets/js/40.725e62df.js"><link rel="prefetch" href="/assets/js/41.5840c70b.js"><link rel="prefetch" href="/assets/js/42.f241ad59.js"><link rel="prefetch" href="/assets/js/43.b0a9dec3.js"><link rel="prefetch" href="/assets/js/44.5c3b43f9.js"><link rel="prefetch" href="/assets/js/45.f3fe01d8.js"><link rel="prefetch" href="/assets/js/46.c457c5eb.js"><link rel="prefetch" href="/assets/js/47.8e001d83.js"><link rel="prefetch" href="/assets/js/48.f9433d0a.js"><link rel="prefetch" href="/assets/js/49.39d4ae2a.js"><link rel="prefetch" href="/assets/js/5.cb39e42a.js"><link rel="prefetch" href="/assets/js/50.4e5e9757.js"><link rel="prefetch" href="/assets/js/51.0c58d203.js"><link rel="prefetch" href="/assets/js/52.615f38c8.js"><link rel="prefetch" href="/assets/js/53.5f782a16.js"><link rel="prefetch" href="/assets/js/54.077e0264.js"><link rel="prefetch" href="/assets/js/55.d2d8deba.js"><link rel="prefetch" href="/assets/js/56.18f70692.js"><link rel="prefetch" href="/assets/js/57.de417d85.js"><link rel="prefetch" href="/assets/js/58.f2d3bcc4.js"><link rel="prefetch" href="/assets/js/59.66818530.js"><link rel="prefetch" href="/assets/js/6.ca4a0329.js"><link rel="prefetch" href="/assets/js/60.fd6daf2f.js"><link rel="prefetch" href="/assets/js/61.e6dcd726.js"><link rel="prefetch" href="/assets/js/62.926c7922.js"><link rel="prefetch" href="/assets/js/63.fa44db67.js"><link rel="prefetch" href="/assets/js/64.c5fcad83.js"><link rel="prefetch" href="/assets/js/65.a6759132.js"><link rel="prefetch" href="/assets/js/66.1632bbfa.js"><link rel="prefetch" href="/assets/js/67.1fd60ec6.js"><link rel="prefetch" href="/assets/js/68.1ecb4ac7.js"><link rel="prefetch" href="/assets/js/69.3868f596.js"><link rel="prefetch" href="/assets/js/7.07729ce5.js"><link rel="prefetch" href="/assets/js/70.d725abd6.js"><link rel="prefetch" href="/assets/js/71.27af85bc.js"><link rel="prefetch" href="/assets/js/72.3d489451.js"><link rel="prefetch" href="/assets/js/73.a74a2cba.js"><link rel="prefetch" href="/assets/js/74.38648f8f.js"><link rel="prefetch" href="/assets/js/75.b04168df.js"><link rel="prefetch" href="/assets/js/76.eafd60cd.js"><link rel="prefetch" href="/assets/js/77.5275a1a0.js"><link rel="prefetch" href="/assets/js/78.2385bc20.js"><link rel="prefetch" href="/assets/js/79.3c1e5800.js"><link rel="prefetch" href="/assets/js/8.2ca80a85.js"><link rel="prefetch" href="/assets/js/80.edb051c7.js"><link rel="prefetch" href="/assets/js/81.ba920403.js"><link rel="prefetch" href="/assets/js/82.ead50bd2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.06abe9db.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Ideal And Daily</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>To record knowledge and daily.</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>zhuJF</span>
+            
+          <!---->
+          2024
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="Ideal And Daily" class="logo"> <span class="site-name">Ideal And Daily</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/我的前端路线/" class="nav-link"><i class="undefined"></i>
+  我的前端路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/分类/" class="nav-link"><i class="undefined"></i>
+  分类
+</a></li><li class="dropdown-item"><!----> <a href="/categories/我的项目/" class="nav-link"><i class="undefined"></i>
+  我的项目
+</a></li><li class="dropdown-item"><!----> <a href="/categories/关于我/" class="nav-link"><i class="undefined"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      友情链接
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jinfazhu-mygit" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  MyGithub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-api"></i>
+  aliyun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/headicon.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    zhuJF
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>67</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>60</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/我的前端路线/" class="nav-link"><i class="undefined"></i>
+  我的前端路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/分类/" class="nav-link"><i class="undefined"></i>
+  分类
+</a></li><li class="dropdown-item"><!----> <a href="/categories/我的项目/" class="nav-link"><i class="undefined"></i>
+  我的项目
+</a></li><li class="dropdown-item"><!----> <a href="/categories/关于我/" class="nav-link"><i class="undefined"></i>
+  关于我
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      友情链接
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jinfazhu-mygit" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  MyGithub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-api"></i>
+  aliyun
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/aboutme/" class="nav-link"><i class="iconfont reco-account"></i>
+  关于我
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>JS模块化(CommonJS，ES Module)相关</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>zhuJF</span>
+            
+          <!---->
+          2024
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">JS模块化(CommonJS，ES Module)相关</h1> <div data-v-1b6858b6><i class="iconfont reco-account" data-v-1b6858b6><span data-v-1b6858b6>zhuJF</span></i> <i class="iconfont reco-date" data-v-1b6858b6><span data-v-1b6858b6>2022年2月16日</span></i> <i class="iconfont reco-eye" data-v-1b6858b6><span id="/JS模块化(CommonJS，ES Module)相关/" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1b6858b6><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-1b6858b6><span class="tag-item" data-v-1b6858b6>javascript</span></i></div></div> <div class="content__default"><h1 id="js模块化"><a href="#js模块化" class="header-anchor">#</a> JS模块化</h1> <ul><li>模块化开发最终的目的是将程序划分成<strong>一个个小的结构</strong>；</li> <li>在<strong>结构中编写属于自己的逻辑代码，有自己的作用域，不会影响到其他的结构</strong>；</li> <li>将自己<strong>希望暴露的变量、函数、对象等导出</strong>给其结构<strong>使用</strong>；</li> <li>也可以通过某种方式，<strong>导入另外结构中的变量、函数、对象</strong>等；</li> <li>更加灵活的复用代码块</li></ul> <h2 id="commonjs"><a href="#commonjs" class="header-anchor">#</a> CommonJS</h2> <ul><li><strong>CommonJS是一个规范</strong>，<strong>最初</strong>提出来是在<strong>浏览器以外的地方使用</strong>，并且当时被命名为ServerJS，后来为了 体现它的广泛性，修改为CommonJS，平时我们也会简称为CJS。</li> <li>Node中对CommonJS进行了支持和实现</li> <li>在Node中<strong>每一个js文件都是一个单独的模块</strong>；</li> <li>这个模块中包括<strong>CommonJS规范的核心变量</strong>：<strong>exports、module.exports、require</strong>；</li></ul> <h3 id="基本使用"><a href="#基本使用" class="header-anchor">#</a> 基本使用</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// zjf.js</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">21</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> num1 <span class="token operator">+</span> num2
+<span class="token punctuation">}</span>
+<span class="token comment">// 1.module.exportrs导出</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">,</span>
+  age<span class="token punctuation">,</span>
+  foo
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2.因为源码中module.exports = {}</span>
+<span class="token comment">// exports = module.exports</span>
+exports<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+exports<span class="token punctuation">.</span>foo <span class="token operator">=</span> foo<span class="token punctuation">;</span>
+
+<span class="token comment">// main.js</span>
+<span class="token keyword">const</span> zjf <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./zjf'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 模块被第一次加载时会运行一次, 多次引用也只加载一次,引入一次即会存入缓存中，所以多次引用相同模块也只会执行一次</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>zjf<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>zjf<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>zjf<span class="token punctuation">.</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="require补充"><a href="#require补充" class="header-anchor">#</a> <strong>require补充</strong></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'axios'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 先查找node核心模块</span>
+<span class="token comment">// 再查找当前层级的mode_modules文件夹下的模块/axios/index.js</span>
+<span class="token comment">// 当前层级下的node_modules文件下找不到就去上层node_modules找</span>
+
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./zjf'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 先找当前文件夹下的zjf.js</span>
+<span class="token comment">// 再找当前文件夹下的zjf.json</span>
+<span class="token comment">// 再找当前文件夹下的zjf.node</span>
+<span class="token comment">// 再找当前文件夹下的/zjf/index.js</span>
+<span class="token comment">// 再找当前文件夹下的/zjf/index.json</span>
+<span class="token comment">// 再找当前文件夹下的/zjf/index.node</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="amd-cmd"><a href="#amd-cmd" class="header-anchor">#</a> AMD/CMD</h2> <h2 id="es-module"><a href="#es-module" class="header-anchor">#</a> ES Module</h2> <ul><li>ES Module和CommonJS的模块化有一些不同之处：
+<ul><li>一方面它使用了<strong>import</strong>和<strong>export</strong>关键字；</li> <li>另一方面它采用编译期的静态分析，并且也加入了动态引用的方式；</li></ul></li> <li>ES Module模块采用<strong>export</strong>和<strong>import</strong>关键字来实现模块化</li> <li>采用<strong>ES Module将自动采用严格模式：use strict</strong>；</li> <li><strong>node环境下不能运行ES Module代码</strong>，可通过**.html文件<strong>的script标签中加上</strong>type=&quot;module&quot;**在浏览器中运行</li></ul> <h3 id="常见用法"><a href="#常见用法" class="header-anchor">#</a> 常见用法</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// foo.js</span>
+<span class="token comment">// 1.export导出</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'foo function'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2.export导出和声明分开</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'foo function'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span> <span class="token comment">// 固定语法</span>
+  name<span class="token punctuation">,</span>
+  age<span class="token punctuation">,</span>
+  foo
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 3.第二种导出时起别名(较少用)</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  name <span class="token keyword">as</span> fName<span class="token punctuation">,</span>
+  age <span class="token keyword">as</span> fAge<span class="token punctuation">,</span>
+  foo <span class="token keyword">as</span> fFoo
+<span class="token punctuation">}</span>
+
+<span class="token comment">// main.js</span>
+<span class="token comment">// 1.普通导入</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fName<span class="token punctuation">,</span> fAge<span class="token punctuation">,</span> fFoo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span> <span class="token comment">// 在浏览器中运行必须加上.js,以及script标签必须加上type = module</span>
+
+<span class="token comment">// 2.起别名</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fName <span class="token keyword">as</span> name<span class="token punctuation">,</span> fAge <span class="token keyword">as</span> age<span class="token punctuation">,</span> fFoo <span class="token keyword">as</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span>
+
+<span class="token comment">// 3.直接拿到导出的所有内容，放到一个标识符中</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> foo <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">.</span>fName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">.</span>fAge<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><h3 id="import和export结合使用"><a href="#import和export结合使用" class="header-anchor">#</a> <strong>import和export结合使用</strong></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// index.js中转</span>
+<span class="token comment">// 1. 普通导出</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> sum<span class="token punctuation">,</span> sub <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./math.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> timeFormat<span class="token punctuation">,</span> priceFormat <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./format.js'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  sum<span class="token punctuation">,</span>
+  sub<span class="token punctuation">,</span>
+  timeFormat<span class="token punctuation">,</span>
+  priceFormat
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 2.导入导出结合</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> sum<span class="token punctuation">,</span> sub <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./math.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span> timeFormat<span class="token punctuation">,</span> priceFormat <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./format.js'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3.导入同时导出所有</span>
+<span class="token keyword">export</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token string">'./math.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token operator">*</span> <span class="token keyword">from</span> <span class="token string">'./format.js'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="默认导出-export-default"><a href="#默认导出-export-default" class="header-anchor">#</a> <strong>默认导出(export default)</strong></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// foo.js</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token string">'foo value'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">,</span>
+  age<span class="token punctuation">,</span>
+  <span class="token comment">// foo as default // 默认导出方式一</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 默认导出方式二(默认导出只能有一个)</span>
+<span class="token comment">// 默认到处和普通导出可以同时存在</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> foo<span class="token punctuation">;</span>
+
+<span class="token comment">// main.js</span>
+<span class="token comment">// 针对性导出</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 导入默认值(默认导出导入可以和针对性导出导入同时存在)</span>
+<span class="token keyword">import</span> zjf <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>zjf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="import函数-同步导入与异步导入"><a href="#import函数-同步导入与异步导入" class="header-anchor">#</a> <strong>import函数(同步导入与异步导入)</strong></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 1.针对性导入(同步)</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2.异步导入</span>
+<span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./foo.js'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'不影响后续代码'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ES11新增的特性</span>
+<span class="token comment">// meta属性本身也是一个对象：{ url: '当前模块所在路径' }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// foo.js</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> foo <span class="token operator">=</span> <span class="token string">'foo value'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">,</span>
+  age<span class="token punctuation">,</span>
+  foo
+<span class="token punctuation">}</span>
+
+<span class="token comment">// main.js</span>
+<span class="token comment">// 1.针对性导入(同步)</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> foo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2.异步导入</span>
+<span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./foo.js'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'不影响后续代码'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ES11新增的特性</span>
+<span class="token comment">// meta属性本身也是一个对象：{ url: '当前模块所在路径' }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h3 id="导出数据修改的相关限制"><a href="#导出数据修改的相关限制" class="header-anchor">#</a> <strong>导出数据修改的相关限制</strong></h3> <ul><li><strong>ES Module中只有导出方才可以修改导出的数据</strong>，<strong>导入方修改不了导入的数据</strong></li> <li>CommonJS中无论是导出方还是导入方都可以修改数据</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// foo.js</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">// 导出方可改</span>
+  name <span class="token operator">=</span> <span class="token string">'12312'</span><span class="token punctuation">,</span>
+  age <span class="token operator">=</span> <span class="token number">30</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">,</span>
+  age
+<span class="token punctuation">}</span>
+
+<span class="token comment">// main.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo.js'</span><span class="token punctuation">;</span>
+
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">// 导入方不可改导入的数据</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="commonjs与es-module混用"><a href="#commonjs与es-module混用" class="header-anchor">#</a> <strong>CommonJS与ES Module混用</strong></h3> <ul><li>只有在<strong>高版本node</strong>(低版本node可能没有ES Module相关配置)和<strong>webpack环境</strong>下commonJS和ES Module才可以混用</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// foo.js</span>
+<span class="token keyword">const</span> name <span class="token operator">=</span> <span class="token string">'zjf'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> age <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+
+<span class="token comment">// commonjs导出</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">,</span>
+  age
+<span class="token punctuation">}</span>
+
+<span class="token comment">// index.js</span>
+<span class="token comment">// ES Module导入</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> age <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./foo'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// CommonJS导入</span>
+<span class="token comment">// const { name, age } = require('./bar');</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间: </span> <span class="time">2022年2月16日星期三晚上8点14分</span></div></footer> <!----> <div class="comments-wrapper" style="display:none;"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:15rem;font-size:15px;" data-v-5b882468><li class="level-2" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#commonjs" class="sidebar-link reco-side-commonjs" data-v-5b882468>CommonJS</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#基本使用" class="sidebar-link reco-side-基本使用" data-v-5b882468>基本使用</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#require补充" class="sidebar-link reco-side-require补充" data-v-5b882468>require补充</a></li><li class="level-2" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#amd-cmd" class="sidebar-link reco-side-amd-cmd" data-v-5b882468>AMD/CMD</a></li><li class="level-2" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#es-module" class="sidebar-link reco-side-es-module" data-v-5b882468>ES Module</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#常见用法" class="sidebar-link reco-side-常见用法" data-v-5b882468>常见用法</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#import和export结合使用" class="sidebar-link reco-side-import和export结合使用" data-v-5b882468>import和export结合使用</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#默认导出-export-default" class="sidebar-link reco-side-默认导出-export-default" data-v-5b882468>默认导出(export default)</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#import函数-同步导入与异步导入" class="sidebar-link reco-side-import函数-同步导入与异步导入" data-v-5b882468>import函数(同步导入与异步导入)</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#导出数据修改的相关限制" class="sidebar-link reco-side-导出数据修改的相关限制" data-v-5b882468>导出数据修改的相关限制</a></li><li class="level-3" data-v-5b882468><a href="/JS模块化(CommonJS，ES Module)相关/#commonjs与es-module混用" class="sidebar-link reco-side-commonjs与es-module混用" data-v-5b882468>CommonJS与ES Module混用</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><APlayer audio="" fixed="true" mini="true" theme="#b7adff" loop="loop" order="list" preload="auto" volume="0.7" mutex="true" lrc-type="0" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer><canvas id="vuepress-canvas-cursor"></canvas><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Ideal And Daily
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:15px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><!----></div></div>
+    <script src="/assets/js/app.d3107001.js" defer></script><script src="/assets/js/4.57e241f5.js" defer></script><script src="/assets/js/1.43b398fb.js" defer></script><script src="/assets/js/2.c692a8a1.js" defer></script><script src="/assets/js/23.baec1807.js" defer></script><script src="/assets/js/9.c5aadb64.js" defer></script>
+  </body>
+</html>
